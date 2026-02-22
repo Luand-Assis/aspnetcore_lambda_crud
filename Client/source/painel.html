@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - VehicleManager</title>
+    <link rel="stylesheet" href="./css/painel.css">
+    <script src="./js/painel.js"></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">Vehicle<span>Manager</span></div>
+        <nav class="navegacao">
+            <button class="botao-nav ativo">Painel</button>
+            <button class="botao-nav" onclick="location.href='veiculos.html'">Veículos</button>
+            <button class="botao-nav botao-sair" onclick="sair()">Sair</button>
+        </nav>
+    </header>
+
+    <section class="dashboard">
+
+        <h1>Dashboard</h1>
+        <h4>Olá, Sr. <span class="usuario-nome" id="span_nome_usuario">loading...</span></h4>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total de Veículos</h3>
+                <p class="numero" id="total-veiculos">loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>Veículo Mais Caro</h3>
+                <p class="numero" id="veiculo-mais-caro">loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>Horário Atual</h3>
+                <p class="numero" id="horario-atual"></p>
+            </div>
+
+        </div>
+
+        <div class="acoes-rapidas">
+            <h2>Ações Rápidas</h2>
+            <div class="botoes">
+                <a href="veiculos.html" class="botao-principal">Gerenciar Veículos</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="rodape">
+        <p>© 2026 VehicleManager - Sistema de Gerenciamento</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos</title>
+    <link rel="stylesheet" href="./css/veiculos.css">
+    <script src="./js/veiculos.js"></script>
+</head>
+
+<body class="pagina">
+
+    <header class="cabecalho">
+        <div class="logo">Vehicle<span>Manager</span></div>
+        <nav class="navegacao">
+            <button class="botao-nav" onclick="location.href='painel.html'">Painel</button>
+            <button class="botao-nav ativo">Veículos</button>
+            <button class="botao-nav botao-sair" onclick="sair()">Sair</button>
+        </nav>
+    </header>
+
+    <section class="titulo-pagina">
+        <h1>Veículos</h1>
+        <h4 class="boas-vindas">Bem-Vindo Sr. <span id="span_nome_usuario">loading...</span></h4>
+    </section>
+
+    <div class="container-principal">
+
+        <section class="cartao">
+            <p class="titulo-secao">Cadastrar Veículo</p>
+            <p>Nome</p>
+            <input type="text" id="input_veiculo" class="campo" placeholder="Nome do veículo">
+            <p>Valor</p>
+            <input type="text" id="input_valor" class="campo" placeholder="R$">
+            <p>Marca</p>
+            <input type="text" id="input_marca" class="campo" placeholder="Marca">
+            <p>Placa</p>
+            <input type="text" id="input_placa" class="campo" placeholder="Placa">
+            <button class="botao botao-primario">Cadastrar</button>
+        </section>
+
+        <section class="cartao">
+            <p class="titulo-secao">Listar Veículos</p>
+            <p>Filtros (opcional)</p>
+            <input type="text" id="input_valor_minimo" class="campo" placeholder="Valor mínimo">
+            <input type="text" id="input_valor_maximo" class="campo" placeholder="Valor máximo">
+            <button class="botao botao-secundario">Filtrar</button>
+        </section>
+
+        <section class="cartao">
+            <p class="titulo-secao">Atualizar Veículo</p>
+            <select id="select_all_veiculos_att" class="campo">
+                <option>Selecione o veículo</option>
+            </select>
+            <input type="text" id="input_nome_att" class="campo" placeholder="Veículo" disabled>
+            <input type="text" id="input_valor_att" class="campo" placeholder="Valor" disabled>
+            <input type="text" id="input_marca_delete" class="campo" placeholder="Marca" disabled>
+            <input type="text" id="input_placa_att" class="campo" placeholder="Placa" disabled>
+            <button class="botao botao-alerta">Atualizar</button>
+        </section>
+
+        <section class="cartao">
+            <p class="titulo-secao">Remover Veículo</p>
+            <select id="select_all_veiculos_delete" class="campo">
+                <option>Selecione o veículo</option>
+            </select>
+            <input type="text" id="input_nome_delete" class="campo" placeholder="Veículo" disabled>
+            <input type="text" id="input_valor_delete" class="campo" placeholder="Valor" disabled>
+            <input type="text" id="input_marca_delete" class="campo" placeholder="Marca" disabled>
+            <input type="text" id="input_placa_delete" class="campo" placeholder="Placa" disabled>
+            <button class="botao botao-perigo">Remover</button>
+        </section>
+
+    </div>
+
+    <div class="area-resposta">
+        <p id="resposta_veiculo_actions"></p>
+    </div>
+
+</body>
+
+</html>
