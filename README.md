@@ -40,12 +40,13 @@ O projeto também serve como estudo para crescimento profissional em **desenvolv
 
 ### Passos para executar
 
-1. **Clonar o repositório**  
    ```bash
    git clone https://github.com/Luand-Assis/aspnetcore_lambda_crud.git
    cd VehicleManager
    dotnet run
    ```
+   
+**OBS: Considere que SDK e Extensões C# Dev Kit já estão instaladas.**
 
 ---
 
