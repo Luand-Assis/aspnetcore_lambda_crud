@@ -1,0 +1,11 @@
+# Pastas responsáveis pelo build local.
+/bin/
+/obj/
+
+# Caches e logs que foram executados localmente.
+*.user
+*.suo
+*.log
+*.vs/
+
+.vscode/
